@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --stdWhite: #ffffff;
+    --stdblack: #000000;
+    --orangeYellow: #FFB400;
+    --bgColor: #232931;
+    --primaryFontFamily: "Poppins", sans-serif;
+}
+
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: var(--primaryFontFamily);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* nav  */
+
+nav {
+    z-index: 3;
+}
+
+.brand-name {
+    font-weight: 900;
+    background-color: var(--bgColor);
+}
+
+.menu-button {
+    opacity: 0.5;
+    letter-spacing: 1.6px;
+}
+
+.home {
+    color: var(--orangeYellow) !important;
+}
+
+.book {
+    background-color: var(--orangeYellow);
+}
+
+/* / banner  */
+
+.banner-img {
+    height: 100vh;
+    background-image: linear-gradient(rgba(89, 183, 255, 0), rgba(89, 183, 255, 0.5)), url(../images/background/bg_1.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 0.9;
+
+}
+
+/* form  */
+
+.bg-form {
+    background-color: var(--bgColor);
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.bg-form input {
+    background-color: transparent;
+}
+
+.bg-form input::placeholder, .bg-form i, select {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Places  */
+
+.sec-place {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sub-head h2 {
+    font-size: 1.75rem;
+}
+
+.sub-head p {
+    color: #999999;
+}
+
+.place-img {
+    overflow: hidden;
+}
+
+.place-img img {
+
+    transform: scale(1.2);
+}
+
+.money {
+    bottom: -15px;
+    right: 10px;
+    z-index: 2;
+    box-shadow: 0px 20px 43px -8px rgba(0, 0, 0, 0.11);
+}
+
+.place-details p {
+    font-size: 0.875rem;
+    letter-spacing: 1.4px;
+}
+
+.zoom {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--stdWhite);
+    border-radius: 50%;
+    top: -50px;
+    right: 10px;
+    z-index: 3;
+}
+
+.zoom i {
+    font-size: 1.25rem;
+    color: var(--stdWhite);
+}
+
+.places:hover .place-img img {
+    transform: scale(1.0);
+    transition: all 0.5s ease-in-out;
+}
+
+.places:hover .money span {
+    color: var(--stdblack) !important;
+    background-color: var(--orangeYellow) !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.places:hover .zoom {
+    top: 10px !important;
+    transition: all 0.5s ease-in-out;
+}
+
+/* / Speciality */
+
+.sec-spec {
+    background-color: #F8F9FA;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.speciality i {
+    font-size: 3.75rem;
+    color: #6b75ff;
+}
+
+.speciality p {
+    color: #999999;
+}
+
+
+/* about  */
+
+.about-count {
+    background-color: #F8F9FA;
+}
+
+.about-count span {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.about-count p {
+    font-size: .875rem;
+    opacity: 0.7;
+}
+
+.orderedList p {
+    line-height: 1.8rem;
+    opacity: 0.7;
+}
+
+.orderedList li {
+    line-height: 1.8rem;
+    opacity: 0.7;
+}
+
+/* stories  */
+
+.sec-stories {
+    background-color: #F8F9FA;
+}
+
+.sec-stories img {
+    height: 270px;
+}
+
+.date {
+    bottom: 0;
+}
+
+.date span {
+    font-size: 3.1rem;
+    color: var(--orangeYellow);
+    font-weight: 300;
+}
+
+.date p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+
+.sec-bgImg {
+    height: 320px;
+    background-image: url(../images/background/bg_1.jpg);
+}
+
+/* subscribe  */
+
+
+.form-sub input {
+    background-color: #F2F2F2;
+    width: 80%;
+}
+
+.form-sub::placeholder {
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 1.25rem;
+
+}
+
+
+/* footer  */
+
+.pad-top {
+    padding-top: 110px;
+}
+
+footer h4 {
+    font-size: 1.15rem;
+}
+
+.ft-icons {
+    background-color: #2D333C;
+    height: 50px;
+    width: 50px;
+}
+
+.colorlib:hover {
+    opacity: 1 !important;
+}
+
+.slide {
+    background-image: linear-gradient(rgba(35, 41, 49, 0.9), rgba(35, 41, 49, 0.9)), url(../images/background/bg_1.jpg);
+
+}
+
+.bg-img1 {
+    height: 600px;
+    background-image: linear-gradient(rgba(35, 41, 49, 0.2), rgba(35, 41, 49, 0.2)), url("../images/background/traveler-1.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+
+.bg-img2 {
+    height: 600px;
+    background-image: url("../images/background/traveler-2.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+
+.bg-img3 {
+    height: 600px;
+    background-image: url("../images/background/traveler-3.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+
+.bg-img4 {
+    height: 600px;
+    background-image: url("../images/background/traveler-4.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+
+.bg-img5 {
+    height: 600px;
+    background-image: url("../images/background/traveler-5.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+
+}
+
+.bg-caption {
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.slide-p {
+    font-size: 30px;
+    line-height: 44px;
+    opacity: 0.8;
+}
+
+.slide-h3 {
+    font-size: 2.25rem
+}
+
+.designation {
+    opacity: 0.8;
+}
+
+.carousel-item {
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+    /* Places  */
+
+    .sub-head h2 {
+        font-size: 2.5rem;
+    }
+
+    .sec-md-overlapped {
+        margin-top: -180px;
+        position: relative;
+        z-index: 1;
+        transition: all 1s ease;
+    }
+
+    .footer {
+        margin-top: -110px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        background-color: transparent !important;
+
+    }
+
+    .navbar .container {
+        padding: 0 !important;
+        background-color: var(--stdWhite);
+    }
+
+    .text-lg-black {
+        color: var(--stdblack) !important;
+    }
+
+    .navbar .container ul li {
+        font-size: 15px;
+    }
+
+    .home {
+        color: var(--stdblack) !important;
+        opacity: 0.7;
+    }
+
+    .home:hover {
+        opacity: 1 !important;
+    }
+
+    .book {
+        color: var(--stdWhite) !important;
+    }
+
+    .book:hover {
+        color: var(--stdblack) !important;
+    }
+
+    /* banner  */
+    .banner-content h1 {
+        font-size: 4rem;
+    }
+
+    .sec-overlapped {
+        margin-top: -100px;
+        position: relative;
+        z-index: 1;
+        transition: all 1s ease;
+    }
+
+    .h-lg-100 {
+        height: 100%;
+    }
+
+    .bg-caption {
+        width: 50%;
+    }
+}

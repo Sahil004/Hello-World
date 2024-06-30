@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white bg-lg-white">
+            <div class="container">
+                <a class="navbar-brand brand-name text-brand" href="#">Kusina</a>
+                <button class="navbar-toggler border-0 nav-button fw-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                MENU
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-self-center">
+                        <li class="nav-item py-1">
+                            <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item pb-3 py-lg-1">
+                            <a class="nav-link text-lg-black " href="#">About</a>
+                        </li>
+                        <li class="nav-item pb-3 py-lg-1">
+                            <a class="nav-link text-lg-black " href="#">Specialities</a>
+                        </li>
+                        <li class="nav-item pb-3 py-lg-1">
+                            <a class="nav-link text-lg-black " href="#">Reservation</a>
+                        </li>
+                        <li class="nav-item pb-3 py-lg-1">
+                            <a class="nav-link text-lg-black " href="#">Stories</a>
+                        </li>
+                        <li class="nav-item pb-3 py-lg-1">
+                            <a class="nav-link text-lg-black" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5">
+            <div id="bannerimg" data-bs-ride="carousel" class="corousel slide d-lg-none" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-img1 items">
+                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center bg-caption container py-5">
+                            <h1 class="fw-bold mt-1 mb-4 banner-h1">Eat Healthy and Natural Food</h1>
+                            <p class="fs-3 mb-3 banner-p">A small river named Duden flows by their place and supplies it with the necessary regilialia. It is a paradisematic Country.</p>
+                            <div class="row mt-4">
+                                <div class="col-4 sub-img">
+                                    <img src="./images/illustration/menu-1.jpg" alt="" class="rounded-circle mb-3">
+                                    <p>Australian Organic Beef</p>
+                                </div>
+                                <div class="col-4 sub-img">
+                                    <img src="./images/illustration/menu-2.jpg" alt="" class="rounded-circle mb-3">
+                                    <p>Australian Organic Beef</p>
+                                </div>
+                                <div class="col-4 sub-img">
+                                    <img src="./images/illustration/menu-3.jpg" alt="" class="rounded-circle mb-3">
+                                    <p>Australian Organic Beef</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn banner-btn text-white rounded-0 text-capitalize my-3 px-4 py-3">Book a table</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-img2">
+                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center bg-caption container">
+                            <h1 class="fw-bold my-4 banner-h1">We Love Delicious Food</h1>
+                            <p class="fs-3 mb-3 banner-p">A small river named Duden flows by their place and supplies it with the necessary regilialia. It is a paradisematic Country.</p>
+                            <div class="row mt-4">
+                                <div class="col-4 sub-img">
+                                    <a href="">
+                                        <img src="./images/illustration/menu-1.jpg" alt="" class="rounded-circle mb-3">
+                                        <p class="w-80 mx-auto">Australian Organic Beef</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 sub-img">
+                                    <a href="">
+                                        <img src="./images/illustration/menu-2.jpg" alt="" class="rounded-circle mb-3">
+                                        <p>Australian Organic Beef</p>
+                                    </a>
+                                </div>
+                                <div class="col-4 sub-img">
+                                    <img src="./images/illustration/menu-3.jpg" alt="" class="rounded-circle mb-3">
+                                    <p>Australian Organic Beef</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn banner-btn text-white rounded-0 text-capitalize my-3 px-5 py-3">Book a table</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div id="bannerimg" data-bs-ride="carousel" class="corousel slide col-6 ps-5 d-none d-lg-block" >
+                    <div class="row">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-carosal-left items">
+                                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start bg-caption container py-5">
+                                    <h1 class="fw-bold mt-1 mb-4 banner-lg-h1">Eat Healthy and Natural Food</h1>
+                                    <p class="fs-3 mb-3 banner-lg-p">A small river named Duden flows by their place and    supplies it with the necessary regilialia. It is a paradisematic Country.</p>
+                                    <div class="row mt-4">
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-1.jpg" alt="" class="rounded-circle mb-3">
+                                            <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-2.jpg" alt="" class="rounded-circle mb-3">
+                                            <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-3.jpg" alt="" class="rounded-circle mb-3">
+                                            <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn banner-btn text-white rounded-0 text-capitalize my-3   px-4 py-3">Book a table</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-carosal-left items">
+                                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start bg-caption container py-5">
+                                    <h1 class="fw-bold mt-1 mb-4 banner-lg-h1">We Love Delicious Food</h1>
+                                    <p class="fs-3 mb-3 banner-lg-p">A small river named Duden flows by their place and    supplies it with the necessary regilialia. It is a paradisematic Country.</p>
+                                    <div class="row mt-4">
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-1.jpg" alt="" class="rounded-circle mb-3">
+                                                <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-2.jpg" alt="" class="rounded-circle mb-3">
+                                                <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 sub-img">
+                                            <a href="">
+                                                <img src="./images/illustration/menu-3.jpg" alt="" class="rounded-circle mb-3">
+                                                <p>Australian Organic Beef</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn banner-btn text-white rounded-0 text-capitalize my-3   px-4 py-3">Book a table</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+                <div id="bannerimg" data-bs-ride="carousel" class="corousel slide col-6 d-none d-lg-block" >
+                    <div class="row">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-img1 items">
+                            </div>
+                            <div class="carousel-item bg-img2">
+                            </div>
+                        </div>    
+                    </div> 
+                </div>
+            </div>
+            
+        </section>
+        <section class="about">
+            <div class="d-flex flex-column flex-md-row">
+                <div class="trans d-flex justify-content-center align-items-center col-md-5 e-0">
+                    <div class="text-center text-white">
+                        <div class="d-inline-block border border-0 rounded-circle play-border bg-white">
+                            <div class="bg-black play"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 px-4 px-md-5 mt-5">
+                    <div class="section-head">
+                        <span class="d-block cursive">About</span>
+                        <h1 class="fw-bolder fs-1 lh-base">Welcome to Kusina Restaurant</h1>
+                    </div>
+                    <p class="lh-lg mb-5">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h3 class="fw-bolder fs-5">Special Recipe</h3>
+                    <div class="row my-4">
+                        <div class="col-4 pe-0 px-md-3 about-sub-img">
+                            <img src="./images/illustration/lunch-4.jpg" alt="" class="d  mb-1">
+                            <p class="text-center">Australian Organic Beef</p>
+                        </div>
+                        <div class="col-4 px-0 px-md-3 about-sub-img">
+                            <img src="./images/illustration/lunch-7.jpg" alt="" class=" mb-1">
+                            <p class="text-center">Australian Organic Beef</p>
+                        </div>
+                        <div class="col-4 ps-0 px-md-3 about-sub-img">
+                            <img src="./images/illustration/lunch-1.jpg" alt="" class=" mb-1">
+                            <p class="text-center">Australian Organic Beef</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="exp">
+            <div class="container">
+                <div class="row flex-md-row justify-content-center align-items-center text-center text-white exp-bg col-lg-10 mx-auto">
+                    <div class="col-md-3 mb-4">
+                        <h1 class="exp-heading">18</h1>
+                        <p class="opacity-75">Years of Experienced</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h1 class="exp-heading">20,000</h1>
+                        <p class="opacity-75">Happy Customers</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h1 class="exp-heading">564</h1>
+                        <p class="opacity-75">Finished Projects</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h1 class="exp-heading">300</h1>
+                        <p class="opacity-75">Working Days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="speciality mb-5 py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5 section-head">
+                    <span class="d-block cursive">Speciality</span>
+                        <h1 class="fw-bolder fs-1 lh-base">Our Menu</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Breakfast</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/breakfast-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/breakfast-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/breakfast-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Lunch</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/lunch-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/lunch-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/lunch-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Dinner</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dinner-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dinner-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dinner-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25 doller">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Desserts</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dessert-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dessert-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/dessert-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Wine Card</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/wine-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/wine-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/wine-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="text-center">
+                            <h3 class="fs-3 fw-semibold pb-5">Drinks</h3>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/drink-1.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Beef with potatoes</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/drink-2.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex menus">
+                            <div class="special-dish me-3">
+                                <img src="./images/illustration/drink-3.jpg" alt="" class="rounded-circle">
+                            </div>
+                            <div class="dish-text">
+                                <div class="d-flex justify content around menu-name">
+                                    <p class="w-75">Grilled Crab with Onion</p>
+                                    <span class="w-25 d-flex justify-content-end fs-5 fw-semibold opacity-25 doller">$29</span>
+                                </div>
+                                <div class="ingrediants">
+                                    <p>Meat, Potatoes, Rice, Tomatoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <button type="button" class="btn bg-black text-white rounded-0 px-5 py-3">View All Menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimony my-5 py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center text-center pt-5 mb-5">
+                    <span class="d-block cursive-white">Testimony</span>
+                    <h1 class="fw-bolder fs-1 lh-1 text-white">Happy Customer</h1>
+                </div>
+                <div id="bannerimg" data-bs-ride="carousel" class="corousel slide py-5" >
+                    <div class="carousel-inner bg-testimony">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column justify-content-center align-items-center container col-md-7 ">
+                                <div class="mb-4 person-img position-relative">
+                                    <img src="./images/illustration/person_1.jpg" alt="" class=" rounded-circle">
+                                    <span class="d-flex justify-content-center align-items-center position-absolute end-0 quotes rounded-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="person-details text-white text-center opacity-75 mt-3 p3">
+                                    <p class="mb-4 lh-lg">Far far awaay, behind the world mountains, far from the countries Volkalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name text-white fs-5">Arthur Browner</p>
+                                    <p class="customer">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center container col-md-8 ">
+                                <div class="mb-4 person-img position-relative">
+                                    <img src="./images/illustration/person_2.jpg" alt="" class=" rounded-circle">
+                                    <span class="d-flex justify-content-center align-items-center position-absolute end-0 quotes rounded-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="person-details text-white text-center opacity-75 mt-3 p3">
+                                    <p class="mb-4 lh-lg">Far far awaay, behind the world mountains, far from the countries Volkalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name text-white fs-5">Arthur Browner</p>
+                                    <p class="customer">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center container col-md-8 ">
+                                <div class="mb-4 person-img position-relative">
+                                    <img src="./images/illustration/person_3.jpg" alt="" class=" rounded-circle">
+                                    <span class="d-flex justify-content-center align-items-center position-absolute end-0 quotes rounded-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="person-details text-white text-center opacity-75 mt-3 p3">
+                                    <p class="mb-4 lh-lg">Far far awaay, behind the world mountains, far from the countries Volkalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name text-white fs-5">Arthur Browner</p>
+                                    <p class="customer">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center container col-md-8 ">
+                                <div class="mb-4 person-img position-relative">
+                                    <img src="./images/illustration/person_4.jpg" alt="" class=" rounded-circle">
+                                    <span class="d-flex justify-content-center align-items-center position-absolute end-0 quotes rounded-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="person-details text-white text-center opacity-75 mt-3 p3">
+                                    <p class="mb-4 lh-lg">Far far awaay, behind the world mountains, far from the countries Volkalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name text-white fs-5">Arthur Browner</p>
+                                    <p class="customer">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class="chef py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5 section-head">
+                    <span class="d-block cursive">Chefy</span>
+                    <h1 class="fw-bolder fs-1 lh-base">Our Master Chef</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chef-img1"></div>
+                        <div class="chef-details px-4 pt-4">
+                            <h3 class="fs-5 fw-semibold">John Smooth</h3>
+                            <p class="fw-light opacity-50">CEO, Co Founder</p>
+                            <div class="s-icons">
+                                <ul class="list-unlisted d-flex ps-0 ms-0">
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chef-img2"></div>
+                        <div class="chef-details px-4 pt-4">
+                            <h3 class="fs-5 fw-semibold">Rebeca Weison</h3>
+                            <p class="fw-light opacity-50">Head Chef</p>
+                            <div class="s-icons">
+                                <ul class="list-unlisted d-flex ps-0 ms-0">
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chef-img3"></div>
+                        <div class="chef-details px-4 pt-4">
+                            <h3 class="fs-5 fw-semibold">Kharl Branyt</h3>
+                            <p class="fw-light opacity-50">Chef</p>
+                            <div class="s-icons">
+                                <ul class="list-unlisted d-flex ps-0 ms-0">
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="chef-img4"></div>
+                        <div class="chef-details px-4 pt-4">
+                            <h3 class="fs-5 fw-semibold">Luke Simon</h3>
+                            <p class="fw-light opacity-50">Chief</p>
+                            <div class="s-icons">
+                                <ul class="list-unlisted d-flex ps-0 ms-0">
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                    <li class="pe-2 list-group-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Tabel-book">
+            <div class="d-flex flex-column flex-md-row">
+                <div class="reservation d-flex justify-content-center align-items-center col-md-5 e-0">
+                </div>
+                <div class="col-md-7 px-4 px-md-5 py-5">
+                    <div class="section-head mb-5">
+                        <span class="d-block cursive">Book a Table</span>
+                        <h1 class="fw-bolder fs-1 lh-base">Make Reservation</h1>
+                    </div>
+                    <form class="book">
+                        <div class="row">
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Name</label>
+                                    <input type="text" class="form-control rounded-0 form-input" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Email</label>
+                                    <input type="email" class="form-control rounded-0 form-input" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Phone</label>
+                                    <input type="number" class="form-control rounded-0 form-input" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Date</label>
+                                    <input type="date" class="form-control rounded-0 form-input" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Time</label>
+                                    <input type="time" class="form-control rounded-0 form-input" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <div class="form-data">
+                                    <label for="" class="form-label fw-bold">Person</label>
+                                    <select class="form-select rounded-0 form-input">
+                                        <option selected>Person</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <div class="form-data">
+                                    <button type="button" class="btn banner-btn text-white rounded-0 text-capitalize my-3 px-5 py-3">Make A Reservation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </section>
+        <footer class="bg-black py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <h3 class="text-white fw-bold fs-5 mb-5">Kusina</h3>
+                        <p class="text-white opacity-75 ft-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <div class="ft-icons">
+                            <ul class="list-unlisted d-flex ps-0 ms-0">
+                                <li class="pe-3 list-group-item">
+                                    <a href="" class="d-flex
+                                    justify-content-center align-items-center rounded-circle text-white">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="pe-3 list-group-item">
+                                    <a href="" class="d-flex
+                                    justify-content-center align-items-center rounded-circle text-white">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="pe-3 list-group-item">
+                                    <a href="" class="d-flex
+                                    justify-content-center align-items-center rounded-circle text-white">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <h3 class="text-white fw-bold fs-5 mb-5">Open Hours</h3>
+                        <ul class="list-unstyled open-hr">
+                            <li class="row">
+                                <p class="col-6">Monday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Tuesday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Wednsday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Thursday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Friday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Saturday</p>
+                                <p class="col-6">9:00 - 24:00</p>
+                            </li>
+                            <li class="row">
+                                <p class="col-6">Sunday</p>
+                                <p class="col-6">Closed</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <h3 class="text-white fw-bold fs-5 mb-5">Newsletter</h3>
+                        <p class="text-white opacity-75 ft-p">Far far away, behind the word mountains, far from the countries.</p>
+                        <div class="ft-mail">
+                            <input type="text" class="form-control border-0 rounded-0 form-input py-3" placeholder="Enter email address">
+                            <button type="button" class="btn ft-btn text-white rounded-0 text-capitalize my-3 px-5 py-3 w-100">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <h3 class="text-white fw-bold fs-5 mb-5">Instagram</h3>
+                        <div class="d-sm-flex">
+                            <div class="ft-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="ft-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="ft-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="ft-btm-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="ft-btm-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-5.jpg" alt="">
+                                </a>
+                            </div><div class="ft-btm-img">
+                                <a href="">
+                                    <img src="./images/illustration/insta-6.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container row flex-column my-5 mx-auto">
+                    <p class="text-center fw-light text-white opacity-75">Copyright ©2024 All rights reserved | This template is made with <a href=""><i class="fa-regular fa-heart"></i></a> by <a href="">Colorlib</a></p>
+                </div>
+            </div>    
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

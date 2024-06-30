@@ -1,0 +1,406 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+:root {
+    --btnBackground: #f34949;
+    --stdWhite: #ffffff;
+    --stdBlack: #000000;
+    --textColor: #999999;
+    --primaryFontFamily: "Poppins", sans-serif;
+    --fontLoversQuarrel: "Lovers Quarrel", cursive;
+}
+
+* {
+    box-sizing: border-box !important;
+    font-family: var(--primaryFontFamily);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none!important;
+  }
+
+
+
+/* nav */
+.navbar {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.nav-button, .nav-button i {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5)!important;
+    letter-spacing: 0.1rem;
+}
+.bg-lg-white {
+    background-color: var(--stdWhite)!important;
+}
+.text-lg-brand {
+    color: var(--stdBlack)!important;
+}
+.home {
+    color: var(--btnBackground)!important;
+}
+
+.text-lg-black {
+    color: var(--stdBlack)!important;
+    font-weight: 300!important;
+}
+
+.brand-name {
+    font-weight: 900;
+}
+/* Banner img */
+
+.bg-img1{
+    min-height: 700px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/bg_2.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    
+}
+.bg-img2{
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/bg_3.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.bg-caption {
+    height: 100vh;
+    right: 0;
+    left: 0;
+}
+
+.banner-h1 {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+}
+
+.banner-p {
+    color: rgba(255,255,255,0.8);
+    line-height: 3rem;
+}
+
+.sub-img img {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.sub-img p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.banner-btn {
+    background-color: var(--btnBackground);
+}
+
+.banner-btn:hover{
+    color: var(--btnBackground) !important;
+    background: none;
+    border: 2px solid var(--btnBackground);
+}
+
+/* About  */
+
+.trans {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/background/about.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  
+  .trans a {
+    width: 90px;
+    height: 90px;
+  }
+  
+.play-border {
+    padding: 30px;
+}
+.play  {
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(10% 0, 10% 100%, 100% 50%);
+}
+
+.cursive {
+    font-family: var(--fontLoversQuarrel);
+    font-size: 3rem;
+    color: lightcoral;
+    line-height: 0.5;
+}
+.about p {
+    color: var(--textColor);
+}
+
+.about-sub-img img {
+    height: 150px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+.about-sub-img {
+    font-size: 0.9rem;
+}
+
+/* Experiance  */
+
+.exp {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/bg_4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+}
+
+.exp-bg {
+    padding: 100px 0;
+}
+.exp-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* Speciality  */
+
+.menus {
+    padding-bottom: 20px;
+    margin-bottom:  20px;
+    border-bottom: 1px dashed #e6e6e6;
+}
+.menu-name p{
+    opacity: 0.80;
+}
+
+.ingrediants p {
+    opacity: 0.30;
+}
+
+.special-dish img{
+    width: 80px;
+    height: 80px;
+}
+
+.dish-text {
+    width: calc(100% - 80px);
+}
+
+.menus:hover span {
+        opacity: 1!important;
+        transition: all 0.5s ease;
+}
+
+.menus:hover {
+    border-bottom: 1px dashed var(--stdBlack);
+    transition: all 0.5s ease;
+}
+
+/* Testimony  */
+.testimony {
+    background-image:url("../images/background/bg_5.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cursive-white {
+    font-family: var(--fontLoversQuarrel);
+    font-size: 3rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 0.4;
+}
+
+.bg-testimony {
+    width: 100%;
+    background-image: none;
+}
+
+.person-img {
+    width: 130px;
+    height: 130px;
+}
+
+.quotes {
+    bottom: -10px;
+    width: 40px;
+    height: 40px;
+    color: var(--btnBackground);
+    background-color: var(--stdWhite);
+}
+
+/* / Chef ? */
+
+.chef-img1 {
+    height: 320px;
+    background-image: url(../images/background/chef-4.jpg);
+    background-size: cover;
+    background-position: top center!important;
+}
+
+.chef-img2{
+    height: 320px;
+    background-image: url(../images/background/chef-3.jpg);
+    background-size: cover;
+    background-position: top center!important;
+}
+
+.chef-img3 {
+    height: 320px;
+    background-image: url(../images/background/chef-2.jpg);
+    background-size: cover;
+    background-position: top center!important;
+}
+
+.chef-img4 {
+    height: 320px;
+    background-image: url(../images/background/chef-1.jpg);
+    background-size: cover;
+    background-position: top center!important;
+}
+
+.chef-details {
+    font-size: 0.85rem;
+}
+
+.s-icons {
+    color: #f34949;
+    font-size: 1rem;
+}
+
+/* Reservation  */
+.reservation {
+    
+    background-image: url("../images/background/bg_6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.book input, .book select {
+    height: 52px!important;
+}
+.book::placeholder {
+    padding: 1rem!important;
+}
+
+
+/* footer  */
+
+.ft-icons a {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.ft-p {
+    font-size: 0.87rem;
+    line-height: 1.75;
+}
+
+.open-hr p {
+    color: #999999;
+    font-size: 0.87rem;
+}
+.ft-btn {
+    background-color: #f34949;
+}
+
+.ft-mail input {
+    background-color: rgba(255,255,255,0.05);
+}
+.ft-mail input::placeholder {
+    text-align: center;
+    color: #999999;
+    
+}
+
+.ft-img {
+    width: 100%;
+    height: 100px;
+}
+
+.ft-btm-img {
+    width: 33%;
+    height: 100px;
+}
+
+.sub-img:hover p{
+   
+        color: var(--stdBlack)!important;
+        transition: all 0.3s ease;
+  
+}
+
+.about-sub-img:hover p {
+
+        color: var(--stdBlack)!important;
+        transition: all 0.3s ease;
+
+}
+@media (max-width: 767px){
+    .trans{
+    } 
+
+    .reservation{
+        height: 700px;
+    }
+    .form-data button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .trans {
+        justify-content: right!important;
+    }
+    .play-border {
+        margin-right: -45px;
+        box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 992px){
+    .bn {
+        width: 50%!important;
+
+    }
+
+    .bg-carosal-left {
+        min-height: 700px;
+    }
+
+
+    .banner-lg-h1 {
+        font-size: 2.6rem;
+        line-height: 3.8rem;
+        color: var(--stdBlack);
+    }
+    
+    .banner-lg-p {
+        color: rgba(0,0,0,0.8);
+        font-size: 1rem!important;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .sub-img p {
+        color: rgba(0,0,0,0.8);
+    }
+    .bg-img1{
+        background-image:url("../images/background/bg_2.jpg");        
+    }
+    .bg-img2{
+        background-image:url("../images/background/bg_3.jpg");
+    }
+
+}

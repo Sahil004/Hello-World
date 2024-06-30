@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --btnBackground: #EF6C57;
+  --stdWhite: #ffffff;
+  --stdBlack: #000000;
+  --textColor: #4d4d4d;
+  --primaryFontFamily: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box !important;
+  font-family: var(--primaryFontFamily);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none!important;
+}
+
+.xl-nav li {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.xl-nav li a:hover {
+  color: var(--btnBackground)!important;
+  transition: all 0.3s ease;
+}
+.offcanvas-css {
+  width: 300px !important;
+}
+
+.offcanvas-body li a:hover {
+  color: var(--btnBackground)!important;
+}
+
+.bg-img1{
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/hero_bg_1.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  background-attachment: fixed;
+}
+.bg-img2{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/hero_bg_2.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  background-attachment: fixed;
+}
+
+.bg-caption {
+  height: 100vh;
+  right: 0;
+  left: 0;
+}
+
+.bg-caption p {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.5);
+}
+.bg-caption .btn, .btn-q {
+  color: var(--stdWhite);
+  font-weight: 400;
+  background-color: var(--btnBackground);
+}
+
+.bg-caption .btn:hover{
+    color: var(--stdWhite) !important;
+    background: none;
+    border: 2px solid var(--stdWhite);
+}
+
+/* Overplapped img  */
+
+.overlap {
+  margin-top: -150px;
+}
+
+.overlap-cap {
+  
+  position: relative;
+  z-index: 2;
+}
+.overlap-cap h1 {
+  color: var(--stdWhite);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center!important;
+}
+
+/* Package and Services  */
+
+.package i {
+  font-size: 3rem;
+  color: var(--btnBackground);
+}
+
+.package h4, .package p {
+  color: var(--textColor);
+}
+
+.package .btn {
+  color: var(--btnBackground);
+}
+
+/* Testimonials  */
+
+.testimonial h1 {
+  font-size : 2rem;
+}
+
+.testimonial p {
+  line-height: 1.7;
+}
+
+.testimonial span {
+  color: #4d4d4d;
+}
+.testimonial a {
+  color: var(--btnBackground);
+}
+
+.trans {
+  height: 600px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background/hero_bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.trans a {
+  width: 90px;
+  height: 90px;
+}
+
+.overlayed {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.8));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.play-border {
+  padding: 20px;
+}
+.play  {
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(10% 0, 10% 100%, 100% 50%);
+}
+
+.play-border:hover {
+  padding: 40px;
+  transition: all 0.5s ease;
+
+}
+
+
+.trans h1 {
+  font-size: 2.5rem;
+}
+
+
+/* Our Blog  */
+.blog-content h3{
+  color: var(--btnBackground);
+}
+
+.p1 {
+  font-size: 0.87rem;
+  color: #b3b3b3;
+}
+
+.p1 a {
+  color: var(--btnBackground);
+}
+
+.p2 {
+ color: var(--textColor);
+}
+
+.travelQ {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.btn-blog {
+  color: var(--btnBackground);
+  border-color: var(--btnBackground)!important;
+}
+
+.btn-blog:hover {
+  background-color: var(--btnBackground);
+  color: var(--stdWhite);
+  border-color: var(--stdWhite)!important;
+  transition: all 0.5s ease;
+}
+
+/* hovers  */
+
+.zoomed {
+  overflow: hidden;
+}
+.zoomed:hover img {
+
+    transform: scale(1.05); 
+    transition: all 0.5s ease;  
+}
+
+.zoomed:hover h1 {
+
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+
+  
+}
+
+.zoomin {
+  overflow: hidden;
+}
+.zoomin:hover img {
+    transform: scale(1.05); 
+    transition: all 0.5s ease;
+}
+
+.zoomin:hover .wrap {
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+.btn-q:hover {
+  color: var(--stdBlack) !important;
+  background: none;
+  border: 2px solid var(--stdBlack);
+}
+
+/* footer  */
+
+footer {
+  background-color: #333333;
+}
+
+footer .h4 {
+  font-size: 1.2rem;
+}
+
+footer p,footer a {
+  color: #999999;
+  line-height: 1.7;
+}
+
+::placeholder {
+  color: #999999!important;
+}
+
+.form-btn {
+  color: var(--stdWhite);
+  background-color: var(--btnBackground);
+}
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  color: var(--stdWhite);
+  transition: all 0.3s ease;
+  
+}
+@media (min-width: 992px){
+  .caption {
+    margin-left: -100px;
+  }
+}
